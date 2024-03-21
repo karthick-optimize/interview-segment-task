@@ -1,17 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import AppView from "./components/views/app-view";
+import SegmentController from "./components/controllers/segment-controller";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  const handleSave = async (data) => {
+    try {
+      const response = await SegmentController.saveSegment(data);
+      console.log("Segment saved successfully:", response);
+    } catch (error) {
+      console.error("Error saving segment:", error);
+    }
+  };
+
+  return <AppView handleSave={handleSave} />;
+};
 
 export default App;
