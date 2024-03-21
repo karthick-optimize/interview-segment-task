@@ -72,19 +72,21 @@ export const PopupContent = styled.section`
   }
 `;
 
-export const GreenButton = styled(Button)`
+export const SaveButton = styled(Button)`
   background-color: rgb(65, 180, 148);
   border: 1px solid white;
   color: white;
   padding: 6px;
+  cursor: pointer;
 `;
 
-export const WhiteButton = styled(Button)`
+export const CancelButton = styled(Button)`
   background-color: white;
   border: 1px solid white;
   color: red;
   margin-left: 10px;
   padding: 5px;
+  cursor: pointer;
 `;
 
 export const AddButton = styled(Button)`
@@ -101,6 +103,7 @@ export const RemoveButton = styled(Button)`
   width: 20px;
   border: 1px solid rgb(101, 122, 147);
   background: rgb(101, 122, 147);
+  cursor: pointer;
 `;
 
 export const Submit = styled.section`

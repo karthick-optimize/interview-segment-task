@@ -2,8 +2,8 @@ import { useState } from "react";
 import Input from "../../atoms/input";
 import {
   PopupContent,
-  GreenButton,
-  WhiteButton,
+  CancelButton,
+  SaveButton,
   AddButton,
   RemoveButton,
   Submit,
@@ -113,8 +113,8 @@ const SegmentPopupContent = ({ onSave, setShowPopup }) => {
       </PopupContent>
       <Submit>
         <section>
-          <GreenButton onClick={handleSave}>Save the segment</GreenButton>
-          <WhiteButton onClick={() => setShowPopup(false)}>Cancel</WhiteButton>
+          <SaveButton onClick={handleSave}>Save the segment</SaveButton>
+          <CancelButton onClick={() => setShowPopup(false)}>Cancel</CancelButton>
         </section>
       </Submit>
     </>
