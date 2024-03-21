@@ -13,7 +13,13 @@ export const PopupContent = styled.section`
     margin-top: 16px;
     border: 2px solid rgb(111, 168, 220);
     padding: 8px;
+    overflow-y:scroll; 
+    height: 16vh;
   }
+  .blue-box::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
 
   select {
     width: 100%;
